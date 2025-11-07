@@ -15,7 +15,7 @@ export default function Navbar() {
                 <NavLink to='/events' className={activeRoutestyle}>Events</NavLink>
                 <NavLink to='/join' className={activeRoutestyle}>Join Us</NavLink>
             </div>
-            <button className='px-3.5 py-1 rounded-full cursor-pointer border border-[#EB5B00] hover:bg-[#EB5B00] hover:text-black hover:font-medium transition-all duration-500 ease-in-out'>Sign Up</button>
+            <Link to='/signup' className='px-3.5 py-1 rounded-full cursor-pointer border border-[#EB5B00] hover:bg-[#EB5B00] hover:text-black hover:font-medium transition-all duration-500 ease-in-out'>Sign Up</Link>
         </div>
     )
 }
