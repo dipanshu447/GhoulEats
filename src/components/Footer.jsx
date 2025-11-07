@@ -56,7 +56,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="text-center relative z-10 mt-15 text-sm text-gray-400 tracking-widest">
-                Designed by <a href="https://github.com/dipanshu447" className="text-[#EB5B00] hover:font-bold transition-all duration-500 ease-in-out">Dipanshu Sahu</a>
+                Designed by <a href="https://github.com/dipanshu447" target="_blank" className="text-[#EB5B00] hover:font-bold transition-all duration-500 ease-in-out">Dipanshu Sahu</a>
             </div>
 
         </div>
