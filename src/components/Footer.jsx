@@ -2,22 +2,34 @@ import { FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaDiscord } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import { FaLinkedinIn } from "react-icons/fa";
+import { BiLogoDevTo } from "react-icons/bi";
+
+import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <div className="bg-[url('./assets/Footerbg.png')] bg-center grid grid-cols-4 z-10 relative mt-10 py-30 px-20 gap-10">
+        <div className="bg-[url('./assets/Footerbg.png')] bg-center grid grid-cols-4 z-10 relative mt-10 py-20 px-20 gap-10">
             <div className="absolute inset-0 bg-linear-to-t from-transparent to-[#03031e] z-1"></div>
             <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#03031e] z-1"></div>
             <div className="relative z-1 flex flex-col gap-3">
                 <div>
-                    <div className="text-2xl font-[Eater] flex">Ghoul <span className='text-[#EB5B00]'>Eats</span></div>
+                    <Link to='/' className="text-2xl font-[Eater] flex">Ghoul <span className='text-[#EB5B00]'>Eats</span></Link>
                     <small className="text-gray-300">Feeding hungry souls since 1666.</small>
                 </div>
                 <div className="flex gap-4 items-center">
-                    <FaInstagram className="hover:fill-[#EB5B00] hover:drop-shadow-[0_0_10px_#ff7b00] transition-all duration-300 cursor-pointer" />
-                    <FaXTwitter className="hover:fill-[#EB5B00] hover:drop-shadow-[0_0_10px_#ff7b00] transition-all duration-300 cursor-pointer" />
-                    <FaDiscord className="hover:fill-[#EB5B00] hover:drop-shadow-[0_0_10px_#ff7b00] transition-all duration-300 cursor-pointer" />
-                    <MdOutlineMail className="hover:fill-[#EB5B00] hover:drop-shadow-[0_0_10px_#ff7b00] transition-all duration-300 cursor-pointer" />
+                    <a href='https://x.com/dipanshu447' target="_blank">
+                        <FaXTwitter className="hover:fill-[#EB5B00] hover:drop-shadow-[0_0_10px_#ff7b00] transition-all duration-300" />
+                    </a>
+                    <a href="https://www.linkedin.com/in/dipanshu447/" target="_blank">
+                        <FaLinkedinIn className="hover:fill-[#EB5B00] hover:drop-shadow-[0_0_10px_#ff7b00] transition-all duration-300" />
+                    </a>
+                    <a href="https://dev.to/dipanshu447" target="_blank">
+                        <BiLogoDevTo className="hover:fill-[#EB5B00] hover:drop-shadow-[0_0_10px_#ff7b00] transition-all duration-300" />
+                    </a>
+                    <a href="mailto:dipanshusahu447@gmail.com" target="_blank">
+                        <MdOutlineMail className="hover:fill-[#EB5B00] hover:drop-shadow-[0_0_10px_#ff7b00] transition-all duration-300" />
+                    </a>
                 </div>
             </div>
             <div className="relative z-1 flex flex-col gap-4">
@@ -25,10 +37,10 @@ export default function Footer() {
                     <div className="text-xl flex">Quick Links</div>
                 </div>
                 <div className="flex gap-2 flex-col font-extralight text-sm">
-                    <a href="#" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">Home</a>
-                    <a href="#" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">Menu</a>
-                    <a href="#" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">About Us</a>
-                    <a href="#" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">Join the Feast</a>
+                    <Link to="/" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">Home</Link>
+                    <Link to="/menu" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">Menu</Link>
+                    <Link to="/about" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">About Us</Link>
+                    <Link to="/join" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">Join the Feast</Link>
                     <a href="#" className="hover:text-[#EB5B00] transition-all duration-300 cursor-pointer">Contact Us</a>
                 </div>
             </div>
