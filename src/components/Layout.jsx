@@ -2,9 +2,9 @@ import Navbar from './Navbar';
 import Footer from './Footer';
 import { Outlet } from 'react-router-dom';
 
-export default function Layout(){
+export default function Layout() {
     return (
-        <div className="box-border w-screen h-screen bg-[#1b0917] text-white">
+        <div className="box-border bg-[#03031e] text-white font-[Stack_Sans_Text]">
             <Navbar />
             <Outlet />
             <Footer />
