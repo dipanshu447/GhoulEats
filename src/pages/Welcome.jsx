@@ -6,6 +6,7 @@ import PumpkinBarista from '../assets/welcome_page/chef-crew/Pip the Pumpkin Bar
 import GhostWaitress from '../assets/welcome_page/chef-crew/Misty the Ghost Waitress.jpg';
 import CountCrustula from '../assets/welcome_page/chef-crew/Count Crustula.jpg';
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Welcome() {
     const crew = [
@@ -94,8 +95,8 @@ export default function Welcome() {
                     Come in for a bite or a fright.
                 </div>
                 <div className="flex gap-5 self-center relative z-1">
-                    <button className="py-1.5 px-4 border border-transparent bg-[#EB5B00] text-black hover:text-[#EB5B00] hover:bg-transparent hover:border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out">Enter the Haunted Menu</button>
-                    <button className="py-1.5 px-4 border border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out hover:text-[#EB5B00] hover:inset-shadow-sm inset-shadow-[#EB5B00]">Meet the Crew</button>
+                    <Link to='/menu' className="py-1.5 px-4 border border-transparent bg-[#EB5B00] text-black hover:text-[#EB5B00] hover:bg-transparent hover:border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out">Enter the Haunted Menu</Link>
+                    <a href='#Meet-Our-Creepy-Cute-Crew!' className="py-1.5 px-4 border border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out hover:text-[#EB5B00] hover:inset-shadow-sm inset-shadow-[#EB5B00]">Meet the Crew</a>
                 </div>
             </div>
             <div className="mt-15 z-1 flex flex-col gap-8 px-20">
@@ -139,7 +140,7 @@ export default function Welcome() {
             </div>
             <div className="flex flex-col gap-6 mt-25 px-20 z-1">
                 <div className="flex flex-col gap-3 text-center">
-                    <h1 className="text-3xl font-[Eater]">Meet Our Creepy-Cute <span className="text-[#EB5B00]">Crew</span>!</h1>
+                    <h1 id="Meet-Our-Creepy-Cute-Crew!" className="text-3xl font-[Eater]">Meet Our Creepy-Cute <span className="text-[#EB5B00]">Crew</span>!</h1>
                     <small className="font-light tracking-widest ml-1">They’re spooky, they’re sweet and they make sure every meal is a scream come true!!</small>
                 </div>
                 <div className="grid grid-cols-3 grid-rows-2 gap-y-6">
@@ -160,7 +161,7 @@ export default function Welcome() {
                 </div>
                 <div className="grid grid-cols-4 gap-y-6">
                     {testimonials.map(user => (
-                        <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col w-3xs gap-4">
+                        <div key={user.id} className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col w-3xs gap-4">
                             <div className="flex gap-2">
                                 {Array(user.rating).fill(null).map((s, i) => (<FaStar key={i} className="fill-yellow-400" />))}
                             </div>
@@ -179,8 +180,8 @@ export default function Welcome() {
                     <p className="font-light text-gray-300 mt-10 font-[Jolly_Lodger] text-3xl">GhoulEats welcomes brave souls and hungry spirits. Whether you crave bat wings or ghostly garlic bread, your order awaits in the shadows. One click and the feast begins!</p>
                 </div>
                 <div className="flex gap-4 mt-8 z-10 relative mx-auto font-[Jolly_Lodger] text-2xl">
-                    <button className="py-1.5 px-4 border border-transparent bg-[#EB5B00] text-black hover:text-[#EB5B00] hover:bg-transparent hover:border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out">Join the Coven</button>
-                    <button className="py-1.5 px-4 border hover:bg-[#EB5B00] hover:text-black text-[#EB5B00] bg-transparent border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out">Summon a Meal</button>
+                    <Link to='/join' className="py-1.5 px-4 border border-transparent bg-[#EB5B00] text-black hover:text-[#EB5B00] hover:bg-transparent hover:border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out">Join the Coven</Link>
+                    <Link to='/menu' className="py-1.5 px-4 border hover:bg-[#EB5B00] hover:text-black text-[#EB5B00] bg-transparent border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out">Summon a Meal</Link>
                 </div>
             </div>
         </div>
