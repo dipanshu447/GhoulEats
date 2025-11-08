@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 import { GiSpiderWeb, GiPumpkinMask } from "react-icons/gi";
 import { crew } from "../utils/data";
 import kitchen from '../assets/about_page/kitchen.jpg';
+import { RiKnifeBloodFill } from "react-icons/ri";
 
 export default function AboutUs() {
     return (
@@ -62,7 +63,7 @@ export default function AboutUs() {
                     ))}
                 </div>
             </div>
-            <div className="px-20 mt-20 relative flex gap-10 items-center">
+            <div className="px-20 mt-20 relative flex gap-10 items-center isolate">
                 <div className="flex-1">
                     <div className="flex flex-col gap-2">
                         <h1 className="text-4xl font-[Eater]">The Secret <span className="text-[#EB5B00]">Kitchen</span></h1>
@@ -78,6 +79,7 @@ export default function AboutUs() {
                 <div className="flex-1 h-72 drop-shadow-lg drop-shadow-[#8400ff5d]">
                     <img src={kitchen} alt="kitchen" className="object-cover w-full h-full rounded-2xl" />
                 </div>
+                <RiKnifeBloodFill className="absolute top-10 -left-10 object-cover size-50 fill-white/5" />
             </div>
             <div className="bg-[url('./assets/welcome_page/halloween_theme_bg4.jpg')] bg-center w-full py-32 px-40 relative z-10 mt-5 flex flex-col justify-center">
                 <div className="absolute inset-0 bg-linear-to-t from-transparent to-[#03031e] z-1"></div>
