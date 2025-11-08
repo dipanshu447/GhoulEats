@@ -10,6 +10,7 @@ import JoinPage from './pages/JoinPage';
 import Menu from './pages/Menu';
 import Notfound from './pages/Notfound';
 import SignUp from './pages/Signup';
+import Eventpage from './pages/Eventpage';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: '/signup',
         element: <SignUp />
+      },
+      {
+        path: '/events',
+        element: <Eventpage />
       },
       { path: '*', element: <Notfound /> }
     ],
