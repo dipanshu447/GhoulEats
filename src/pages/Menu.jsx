@@ -39,7 +39,7 @@ export default function Menu() {
                     <h1 className="text-3xl font-[Eater]">Our Sinisterly Delicious <span className="text-[#EB5B00]">Menu</span></h1>
                     <small className="font-light tracking-widest ml-1">Beware... every bite might haunt your cravings forever.</small>
                 </div>
-                <div className="mt-0 flex gap-3 overflow-x-auto overflow-y-hidden">
+                <div className="mt-0 flex gap-3 overflow-x-auto overflow-y-hidden no-scrollbar">
                     <div className="bg-[#0a0a25] p-2 sm:py-2.5 sm:px-4 rounded-lg shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 text-[10px] sm:text-xs" onClick={clearCatgory}>All</div>
                     {menuCategories.map(cat => (
                         <Link key={cat.title} to={`?category=${cat.category}`} className={category == cat.category ? "bg-[#0a0a25] p-2 sm:py-2.5 sm:px-4 rounded-lg shadow-lg border border-[#ff7b00] transition-all duration-300 text-[10px] sm:text-xs flex items-center gap-1.5 shrink-0" :"bg-[#0a0a25] p-2 sm:py-2.5 sm:px-4 rounded-lg shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 text-[10px] sm:text-xs flex items-center gap-1.5 shrink-0"}>
