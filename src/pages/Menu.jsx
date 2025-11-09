@@ -50,7 +50,7 @@ export default function Menu() {
                 </div>
                 <div className="grid gap-4 sm:gap-x-10 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 mt-20 sm:mt-14 gap-y-25">
                     {filterMenu.map(item => (
-                        <div key={item.id} className="bg-[#0a0a25] p-2 sm:p-4 md:p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300">
+                        <div key={item.id} className="bg-[#0a0a25] p-2 sm:p-4 md:p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 justify-between flex flex-col">
                             <img src={item.image} alt="soup" className="-mt-25" />
                             <div className="flex items-center gap-2 mb-3 justify-center flex-col">
                                 <h3 className="text-sm md:text-lg font-semibold text-white text-center">{item.name}</h3>
