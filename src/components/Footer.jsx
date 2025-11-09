@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <div className="bg-[url('./assets/Footerbg.png')] bg-center z-10 relative mt-10 pt-20 pb-5 px-20">
+        <div className="bg-[url('./assets/Footerbg.png')] bg-center z-10 relative sm:mt-10 pt-20 pb-5 px-5 sm:px-8 sm:text-sm md:px-20">
             <div className="absolute inset-0 bg-linear-to-t from-transparent to-[#03031e] z-1"></div>
             <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#03031e] z-1"></div>
-            <div className="grid grid-cols-4 gap-10">
+            <div className="grid sm:grid-cols-4 gap-10">
                 <div className="relative z-1 flex flex-col gap-3">
                     <div>
                         <Link to='/' className="text-2xl font-[Eater] flex">Ghoul <span className='text-[#EB5B00]'>Eats</span></Link>
@@ -50,12 +50,12 @@ export default function Footer() {
                     <input type="email" placeholder="Enter your email" className="border-[#EB5B00] border px-2.5 rounded-md py-2 text-sm my-4" />
                     <button className='px-3.5 py-1 rounded-full cursor-pointer border border-[#EB5B00] bg-[#EB5B00] hover:font-medium transition-all duration-500 ease-in-out text-sm'>Subscribe</button>
                 </div>
-                <div className="relative z-1 flex flex-col items-end text-right">
+                <div className="relative z-1 flex flex-col sm:items-end sm:text-right">
                     <div className="text-xl flex mb-4">Legal & Credits</div>
                     <small className="font-light">© 2025 GhoulEats. Crafted by the undead. All rights reserved.</small>
                 </div>
             </div>
-            <div className="text-center relative z-10 mt-15 text-sm text-gray-400 tracking-widest">
+            <div className="text-center relative z-10 mt-8 sm:mt-15 text-xs sm:text-sm text-gray-400 tracking-widest">
                 Designed by <a href="https://github.com/dipanshu447" target="_blank" className="text-[#EB5B00] hover:font-bold transition-all duration-500 ease-in-out">Dipanshu Sahu</a>
             </div>
 
