@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import { events } from "../utils/data"
+import { motion } from "motion/react"
 
 export default function Eventpage() {
     return (
@@ -13,7 +14,16 @@ export default function Eventpage() {
                 </div>
             </div>
             <div className="flex flex-col gap-5 px-6 md:px-20 justify-center">
-                {events.map(event => (
+                {events.map((event, i) => (
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.4,
+                            ease: "easeInOut"
+                        }}
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
                     <div key={event.id} className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
                         <div className="text-lg font-bold">{event.title}</div>
                         <div className="text-sm sm:text-base">Date: {event.date}</div>
@@ -21,6 +31,7 @@ export default function Eventpage() {
                         <p className="text-xs sm:text-base">{event.description}</p>
                         <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 text-sm sm:text-base">{event.buttonText}</a>
                     </div>
+                    </motion.div>
                 ))}
             </div>
             <div className="bg-[url('./assets/welcome_page/halloween_theme_bg4.jpg')] bg-center w-full py-32 px-6 sm:px-15 md:px-40 relative z-10 mt-5 flex flex-col justify-center">

@@ -3,17 +3,18 @@ import { crew } from "../utils/data";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { testimonials } from "../utils/data";
+import { motion } from "motion/react";
 
 export default function Welcome() {
     return (
         <div className="w-full h-auto flex flex-col relative z-10 bg-no-repeat">
             <div className="bg-[url('./assets/welcome_page/halloween_theme_bg11.jpg')] bg-center text-center flex flex-col gap-8 self-center mx-auto z-1 py-20 sm:py-30 px-6 md:px-40 lg:px-60 relative">
-            <div className="absolute inset-0 bg-linear-to-t from-transparent to-[#03031e] z-1"></div>
-            <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#03031e] z-1"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-transparent to-[#03031e] z-1"></div>
+                <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#03031e] z-1"></div>
                 <div className="flex flex-col gap-2 font-[Eater] relative z-1">
                     <h1 className="text-4xl md:text-6xl leading-tight">Welcome to Ghoul<span className="text-[#EB5B00]">Eats</span>!</h1>
                     <h2 className="font-light text-[#EB5B00]">Where every bite is frightfully fun!</h2>
-                </div>  
+                </div>
                 <div className="mx-6 relative z-1 md:text-base text-[10px] sm:text-sm">
                     Step into the silliest haunted kitchen in town!
                     Our ghostly chefs and pumpkin waiters are brewing treats that’ll make your taste buds scream with joy!
@@ -24,6 +25,7 @@ export default function Welcome() {
                     <a href='#Meet-Our-Creepy-Cute-Crew!' className="py-1.5 px-4 border border-[#EB5B00] rounded-4xl cursor-pointer transition-all duration-500 ease-in-out hover:text-[#EB5B00] hover:inset-shadow-sm inset-shadow-[#EB5B00]">Meet the Crew</a>
                 </div>
             </div>
+
             <div className="mt-8 sm:mt-15 z-1 flex flex-col gap-4 md:gap-8 px-6 md:px-20">
                 <div className="flex flex-col gap-2">
                     <h1 className="text-xl sm:text-3xl font-[Eater]">Why Ghoul<span className="text-[#EB5B00]">Eats</span>!</h1>
@@ -34,33 +36,63 @@ export default function Welcome() {
                     <span className="text-[#EB5B00]"> Every dish comes with a sprinkle of mischief and a whole lot of charm.</span>
                 </div>
                 <div className="grid gap-6 md:gap-10 md:grid-cols-3 mt-2">
-                    <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300">
-                        <GiPumpkinLantern className="text-[#ff7b00] text-3xl mb-3 drop-shadow-[0_0_10px_#ff7b00]" />
-                        <div className="flex items-center gap-3 mb-3">
-                            <h3 className="text-xl font-semibold text-white">Frightfully Delicious Menu</h3>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.4,
+                            ease: "easeInOut"
+                        }}
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
+                        <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300">
+                            <GiPumpkinLantern className="text-[#ff7b00] text-3xl mb-3 drop-shadow-[0_0_10px_#ff7b00]" />
+                            <div className="flex items-center gap-3 mb-3">
+                                <h3 className="text-xl font-semibold text-white">Frightfully Delicious Menu</h3>
+                            </div>
+                            <p className="text-gray-300 text-sm">
+                                Pumpkin pies, bat-wing brownies, and ghostly shakes, every bite make our customer feels like Halloween night.
+                            </p>
                         </div>
-                        <p className="text-gray-300 text-sm">
-                            Pumpkin pies, bat-wing brownies, and ghostly shakes, every bite make our customer feels like Halloween night.
-                        </p>
-                    </div>
-                    <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300">
-                        <GiCobweb className="text-[#ff7b00] text-3xl mb-3 drop-shadow-[0_0_10px_#ff7b00]" />
-                        <div className="flex items-center gap-3 mb-3">
-                            <h3 className="text-xl font-semibold text-white">Spooktacular Vibes</h3>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.4,
+                            ease: "easeInOut"
+                        }}
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
+                        <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300">
+                            <GiCobweb className="text-[#ff7b00] text-3xl mb-3 drop-shadow-[0_0_10px_#ff7b00]" />
+                            <div className="flex items-center gap-3 mb-3">
+                                <h3 className="text-xl font-semibold text-white">Spooktacular Vibes</h3>
+                            </div>
+                            <p className="text-gray-300 text-sm">
+                                Floating candles, glowing pumpkins, and laughter echoing through haunted halls, dine if you dare!
+                            </p>
                         </div>
-                        <p className="text-gray-300 text-sm">
-                            Floating candles, glowing pumpkins, and laughter echoing through haunted halls, dine if you dare!
-                        </p>
-                    </div>
-                    <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300">
-                        <GiCandyCanes className="text-[#ff7b00] text-3xl mb-3 drop-shadow-[0_0_10px_#ff7b00]" />
-                        <div className="flex items-center gap-3 mb-3">
-                            <h3 className="text-xl font-semibold text-white">Trick-or-Treat Rewards</h3>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{
+                            duration: 0.4,
+                            ease: "easeInOut"
+                        }}
+                        viewport={{ once: true, amount: 0.3 }}
+                    >
+                        <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300">
+                            <GiCandyCanes className="text-[#ff7b00] text-3xl mb-3 drop-shadow-[0_0_10px_#ff7b00]" />
+                            <div className="flex items-center gap-3 mb-3">
+                                <h3 className="text-xl font-semibold text-white">Trick-or-Treat Rewards</h3>
+                            </div>
+                            <p className="text-gray-300 text-sm">
+                                Earn creepy-cool rewards with every visit! Surprise treats, secret codes, and mystery dishes await.
+                            </p>
                         </div>
-                        <p className="text-gray-300 text-sm">
-                            Earn creepy-cool rewards with every visit! Surprise treats, secret codes, and mystery dishes await.
-                        </p>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
             <div className="flex flex-col gap-6 mt-8 sm:mt-15 md:mt-25 px-6 md:px-20 z-1">
@@ -69,13 +101,24 @@ export default function Welcome() {
                     <small className="font-light tracking-widest ml-1 sm:text-sm text-xs">They’re spooky, they’re sweet and they make sure every meal is a scream come true!!</small>
                 </div>
                 <div className="grid md:grid-cols-3 gap-6 md:gap-10 justify-center">
-                    {crew.map(c => (
-                        <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300 flex flex-col mt-20" key={c.title}>
-                            <img src={c.img} alt="chef-pfp" className="-mt-20 self-center rounded-full object-cover w-50 mb-6" />
-                            <div className="text-xl text-center mb-3 font-bold">{c.title}</div>
-                            <div className="text-base text-300 mb-1">Role: {c.role}</div>
-                            <p className="text-sm text-gray-300">{c.bio}</p>
-                        </div>
+                    {crew.map((c, i) => (
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.4,
+                                delay: i * 0.1,
+                                ease: "easeInOut"
+                            }}
+                            viewport={{ once: true, amount: 0.3 }}
+                        >
+                            <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300 flex flex-col mt-20" key={c.title}>
+                                <img src={c.img} alt="chef-pfp" className="-mt-20 self-center rounded-full object-cover w-50 mb-6" />
+                                <div className="text-xl text-center mb-3 font-bold">{c.title}</div>
+                                <div className="text-base text-300 mb-1">Role: {c.role}</div>
+                                <p className="text-sm text-gray-300">{c.bio}</p>
+                            </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>
@@ -85,14 +128,25 @@ export default function Welcome() {
                     <small className="font-light tracking-widest ml-1 sm:text-sm text-xs">Straight from the crypt, here’s what our dearly departed diners are saying!</small>
                 </div>
                 <div className="grid md:grid-cols-4 gap-6 justify-center">
-                    {testimonials.map(user => (
-                        <div key={user.id} className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-4">
-                            <div className="flex gap-2">
-                                {Array(user.rating).fill(null).map((s, i) => (<FaStar key={i} className="fill-yellow-400" />))}
+                    {testimonials.map((user, i) => (
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{
+                                duration: 0.4,
+                                delay: i * 0.1,
+                                ease: "easeInOut"
+                            }}
+                            viewport={{ once: true, amount: 0.3 }}
+                        >
+                            <div key={user.id} className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-4">
+                                <div className="flex gap-2">
+                                    {Array(user.rating).fill(null).map((s, i) => (<FaStar key={i} className="fill-yellow-400" />))}
+                                </div>
+                                <small className="text-sm italic font-light text-gray-300">{user.quote}</small>
+                                <div className="text-xs">~ {user.name}</div>
                             </div>
-                            <small className="text-sm italic font-light text-gray-300">{user.quote}</small>
-                            <div className="text-xs">~ {user.name}</div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

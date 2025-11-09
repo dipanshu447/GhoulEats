@@ -3,6 +3,7 @@ import { GiSpiderWeb, GiPumpkinMask } from "react-icons/gi";
 import { crew } from "../utils/data";
 import kitchen from '../assets/about_page/kitchen2.jpg';
 import { RiKnifeBloodFill } from "react-icons/ri";
+import { motion } from "motion/react";
 
 export default function AboutUs() {
     return (
@@ -53,13 +54,24 @@ export default function AboutUs() {
                     <small className="font-light tracking-widest ml-1">The Ghoulish Minds Behind the Madness</small>
                 </div>
                 <div className="grid md:grid-cols-3 grid-rows-2 gap-6 md:gap-10 justify-center">
-                    {crew.map(c => (
+                    {crew.map((c, i) => (
+                        <motion.div 
+                            initial={{opacity: 0, y: 20}}
+                            whileInView={{opacity: 1, y: 0}}
+                            transition={{
+                                duration: 0.4,
+                                delay: i * 0.1,
+                                ease: "easeInOut"
+                            }}
+                            viewport={{once: true, amount: 0.3}}
+                        >
                         <div className="bg-[#0a0a25] p-6 rounded-2xl shadow-lg border border-[#1a1a3a] hover:border-[#ff7b00] hover:shadow-[0_0_20px_#ff7b00] transition-all duration-300 flex flex-col mt-20" key={c.title}>
                             <img src={c.img} alt="chef-pfp" className="-mt-20 self-center rounded-full object-cover w-50 mb-6" />
                             <div className="text-xl text-center mb-3 font-bold">{c.title}</div>
                             <div className="text-base text-300 mb-1">Role: {c.role}</div>
                             <p className="text-sm text-gray-300">{c.bio}</p>
                         </div>
+                        </motion.div>
                     ))}
                 </div>
             </div>

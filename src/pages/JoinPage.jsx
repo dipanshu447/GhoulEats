@@ -1,3 +1,5 @@
+import { motion } from "motion/react"
+
 export default function JoinPage() {
     return (
         <div className="py-16">
@@ -5,28 +7,37 @@ export default function JoinPage() {
                 <h1 className="font-[Eater] text-center text-2xl sm:text-4xl md:text-6xl">Join the Coven. Become Part of the  <span className="text-[#EB5B00]">Feast</span></h1>
                 <small className="text-center text-xs sm:text-sm">Every dish. Every delivery. Every shriek of delight it starts with our crew of brave souls. Step behind the cauldron and help us serve fear with flavor!</small>
             </div>
-            <div className="mt-16 flex flex-col gap-10 px-6 md:px-20">
-                <div className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
-                    <div className="sm:text-xl font-bold">Join as a Chef</div>
-                    <p className="sm:text-base text-sm">Bring your creepy culinary creations to the table and serve the souls who dare to taste them.</p>
-                    <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 sm:text-base text-sm">Become a Chef</a>
+            <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                    duration: 0.4,
+                    ease: "easeInOut"
+                }}
+            >
+                <div className="mt-16 flex flex-col gap-10 px-6 md:px-20">
+                    <div className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
+                        <div className="sm:text-xl font-bold">Join as a Chef</div>
+                        <p className="sm:text-base text-sm">Bring your creepy culinary creations to the table and serve the souls who dare to taste them.</p>
+                        <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 sm:text-base text-sm">Become a Chef</a>
+                    </div>
+                    <div className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
+                        <div className="sm:text-xl font-bold">Join as Waiter</div>
+                        <p className="sm:text-base text-sm">Serve guests who dine under the candlelight of doom.</p>
+                        <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 sm:text-base text-sm">Become a Waiter</a>
+                    </div>
+                    <div className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
+                        <div className="sm:text-xl font-bold">Join as Delivery Ghoul</div>
+                        <p className="sm:text-base text-sm">Deliver meals from the shadows (on time… or else).</p>
+                        <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 sm:text-base text-sm">Become a Delivery Ghoul</a>
+                    </div>
+                    <div className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
+                        <div className="sm:text-xl font-bold">Join as Event Staff</div>
+                        <p className="sm:text-base text-sm">Host and organize Halloween feasts and food events.</p>
+                        <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 sm:text-base text-sm">Become a Event Staff</a>
+                    </div>
                 </div>
-                <div className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
-                    <div className="sm:text-xl font-bold">Join as Waiter</div>
-                    <p className="sm:text-base text-sm">Serve guests who dine under the candlelight of doom.</p>
-                    <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 sm:text-base text-sm">Become a Waiter</a>
-                </div>
-                <div className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
-                    <div className="sm:text-xl font-bold">Join as Delivery Ghoul</div>
-                    <p className="sm:text-base text-sm">Deliver meals from the shadows (on time… or else).</p>
-                    <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 sm:text-base text-sm">Become a Delivery Ghoul</a>
-                </div>
-                <div className="bg-[#0a0a25] p-6 rounded-2xl border border-[#1a1a3a] hover:border-[#ff7b00] transition-all duration-300 flex flex-col gap-2">
-                    <div className="sm:text-xl font-bold">Join as Event Staff</div>
-                    <p className="sm:text-base text-sm">Host and organize Halloween feasts and food events.</p>
-                    <a href='#join' className="py-1.5 px-4 border hover:bg-[#EB5B00]  text-[#EB5B00] hover:text-black bg-transparent border-[#EB5B00] hover:font-bold rounded-4xl cursor-pointer transition-all duration-500 ease-in-out self-baseline mt-3 sm:text-base text-sm">Become a Event Staff</a>
-                </div>
-            </div>
+            </motion.div>
             <h2 id="join" className="font-[Eater] text-center text-3xl mt-16 px-20">Join the Ghoul<span className="text-[#EB5B00]">Eats</span></h2>
             <form className="bg-[url(./assets/joinform.jpg)] bg-no-repeat bg-center mt-4 px-8 sm:px-15 md:px-40 lg:px-60 pt-10 relative flex flex-col items-center gap-5 text-sm">
                 <div className="absolute inset-0 bg-linear-to-t from-transparent to-[#03031e] z-1"></div>
