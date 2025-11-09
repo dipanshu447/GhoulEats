@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom"
 import { GiSpiderWeb, GiPumpkinMask } from "react-icons/gi";
 import { crew } from "../utils/data";
-import kitchen from '../assets/about_page/kitchen.jpg';
+import kitchen from '../assets/about_page/kitchen2.jpg';
 import { RiKnifeBloodFill } from "react-icons/ri";
 
 export default function AboutUs() {
     return (
-        <div className="">
+        <div>
             <div className="bg-[url('./assets/about_page/bg.jpg')] bg-center text-center flex flex-col gap-8 mx-auto z-1 py-30 px-60 relative">
                 <div className="absolute inset-0 bg-linear-to-t from-transparent to-[#03031e] z-1"></div>
                 <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#03031e] z-1"></div>

@@ -2,41 +2,9 @@ import { GiCobweb, GiPumpkinLantern, GiCandyCanes } from "react-icons/gi";
 import { crew } from "../utils/data";
 import { FaStar } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
+import { testimonials } from "../utils/data";
 
 export default function Welcome() {
-        const testimonials = [
-        {
-            id: 1,
-            name: "Zombie Carl",
-            quote:
-                "Best brain stew I’ve had since the apocalypse! Juicy, tender, and seasoned with pure terror.",
-            rating: 5,
-        },
-        {
-            id: 2,
-            name: "Witch Hazel",
-            quote:
-                "The Witch’s Brew Soup had me cackling with joy! A potion so tasty, I almost turned my broom around for seconds.",
-            rating: 5,
-        },
-        {
-            id: 3,
-            name: "Count Draconius",
-            quote:
-                "Ah, the crimson sauces - simply divine! I haven’t tasted such flavor since the 1800s.",
-            rating: 3,
-        },
-        {
-            id: 4,
-            name: "Ghost Greta",
-            quote:
-                "Service so fast it’s scary! My plate appeared before I could say ‘boo!’ Perfect for a midnight haunt snack.",
-            rating: 4,
-        },
-    ];
-
-
     return (
         <div className="w-full h-auto flex flex-col relative z-10 bg-no-repeat">
             <div className="bg-[url('./assets/welcome_page/halloween_theme_bg11.jpg')] bg-center text-center flex flex-col gap-8  self-center mx-auto z-1 py-30 px-60 relative">

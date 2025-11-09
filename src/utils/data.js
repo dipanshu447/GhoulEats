@@ -290,3 +290,34 @@ export const menuItems = [
         image: soulscreamsoda,
     },
 ];
+
+export const testimonials = [
+        {
+            id: 1,
+            name: "Zombie Carl",
+            quote:
+                "Best brain stew I’ve had since the apocalypse! Juicy, tender, and seasoned with pure terror.",
+            rating: 5,
+        },
+        {
+            id: 2,
+            name: "Witch Hazel",
+            quote:
+                "The Witch’s Brew Soup had me cackling with joy! A potion so tasty, I almost turned my broom around for seconds.",
+            rating: 5,
+        },
+        {
+            id: 3,
+            name: "Count Draconius",
+            quote:
+                "Ah, the crimson sauces - simply divine! I haven’t tasted such flavor since the 1800s.",
+            rating: 3,
+        },
+        {
+            id: 4,
+            name: "Ghost Greta",
+            quote:
+                "Service so fast it’s scary! My plate appeared before I could say ‘boo!’ Perfect for a midnight haunt snack.",
+            rating: 4,
+        },
+    ];

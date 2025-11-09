@@ -2,16 +2,6 @@ import { Link } from "react-router-dom"
 import { events } from "../utils/data"
 
 export default function Eventpage() {
-    // {
-    //     id: 1,
-    //     title: "Midnight Feast",
-    //     date: "October 28, 7:00 PM",
-    //     location: "GhoulEats Downtown",
-    //     description:
-    //         "Join our eerie banquet under flickering candlelight. Expect ghostly tunes, cursed courses, and a few... uninvited guests.",
-    //     buttonText: "Reserve a Spot",
-    // }
-
     return (
         <div>
             <div className="bg-[url('./assets/welcome_page/halloween_theme_bg10.jpg')] bg-center text-center flex flex-col gap-8 self-center mx-auto z-1 py-30 px-60 relative">
