@@ -3,10 +3,10 @@ import { GiWebSpit } from "react-icons/gi";
 
 export default function SignUp() {
     return (
-        <div className="py-6 flex px-20 gap-20">
-            <div className="flex flex-col gap-4 flex-1">
+        <div className="py-6 flex px-6 sm:px-20 sm:gap-20 overflow-hidden">
+            <div className="hidden sm:flex flex-col gap-4 flex-1">
             </div>
-            <GiWebSpit className="absolute object-cover size-155 top-0 -left-20 fill-white/10" />
+            <GiWebSpit className="absolute object-cover size-110 sm:size-130 md:size-155 top-0 -left-20 fill-white/10" />
             <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#03031e]"></div>
             <form className="border border-gray-700 px-8 py-6 relative flex flex-col gap-5 text-sm rounded-2xl bg-white/5 flex-2">
                 <div className="flex flex-col gap-2">

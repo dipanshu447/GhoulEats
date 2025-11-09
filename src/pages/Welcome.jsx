@@ -7,7 +7,7 @@ import { testimonials } from "../utils/data";
 export default function Welcome() {
     return (
         <div className="w-full h-auto flex flex-col relative z-10 bg-no-repeat">
-            <div className="bg-[url('./assets/welcome_page/halloween_theme_bg11.jpg')] bg-center text-center flex flex-col gap-8  self-center mx-auto z-1 py-20 sm:py-30 px-6 md:px-40 lg:px-60 relative">
+            <div className="bg-[url('./assets/welcome_page/halloween_theme_bg11.jpg')] bg-center text-center flex flex-col gap-8 self-center mx-auto z-1 py-20 sm:py-30 px-6 md:px-40 lg:px-60 relative">
             <div className="absolute inset-0 bg-linear-to-t from-transparent to-[#03031e] z-1"></div>
             <div className="absolute inset-0 bg-linear-to-b from-transparent to-[#03031e] z-1"></div>
                 <div className="flex flex-col gap-2 font-[Eater] relative z-1">
