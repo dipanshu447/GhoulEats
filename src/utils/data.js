@@ -170,7 +170,7 @@ export const menuItems = [
         name: "Bloody Steak Deluxe",
         price: "$ 14.99",
         description: "Rare cut served dripping with crimson sauce.",
-        category: "Main Course",
+        category: "MainCource",
         image: bloodysteakdeluxe,
     },
     {
@@ -178,7 +178,7 @@ export const menuItems = [
         name: "Soul Ramen",
         price: "$ 12.99",
         description: "Hot broth infused with lost souls and cursed noodles.",
-        category: "Main Course",
+        category: "MainCource",
         image: soulramen,
     },
     {
@@ -186,7 +186,7 @@ export const menuItems = [
         name: "Coffin Crust Pizza",
         price: "$ 11.99",
         description: "Black charcoal dough topped with ghost cheese and bat pepperoni.",
-        category: "Main Course",
+        category: "MainCource",
         image: coffincrustpizza,
     },
     {
@@ -194,7 +194,7 @@ export const menuItems = [
         name: "Graveyard Lasagna",
         price: "$ 13.99",
         description: "Layered pasta resting under tombstone-shaped parmesan crisps.",
-        category: "Main Course",
+        category: "MainCource",
         image: graveyardlasagna,
     },
     {
@@ -202,7 +202,7 @@ export const menuItems = [
         name: "Werewolf Burger",
         price: "$ 10.99",
         description: "Double meat, full-moon special, hair optional.",
-        category: "Main Course",
+        category: "MainCource",
         image: werewolfburger,
     },
 
