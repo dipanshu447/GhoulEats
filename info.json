@@ -1,0 +1,27 @@
+{
+  "tagline": "Immersive themed restaurant UI with animations and interactive design",
+  "featured": false,
+  "status": "completed",
+  "details": {
+    "overview": "A Halloween-themed restaurant web app focused on storytelling, animations, and immersive UI using modern frontend tools.",
+    "image": "https://github.com/dipanshu447/ghouleats/raw/main/.github/preview.gif",
+    "key_features": [
+      "Framer Motion animations for smooth transitions",
+      "Interactive menu with category filtering",
+      "Multi-page navigation with themed UI",
+      "AI-generated characters and visuals",
+      "Consistent design across all sections"
+    ],
+    "what_i_learned": [
+      "Using animations to enhance user experience",
+      "Building visually consistent themed interfaces",
+      "Managing larger component structures in React",
+      "Balancing creativity with usability",
+      "Working with Framer Motion for smooth interactions"
+    ],
+    "tech_stack": {
+      "frontend": ["React", "Tailwind CSS"],
+      "tools": ["Framer Motion", "Vite"]
+    }
+  }
+}
