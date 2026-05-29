@@ -1,27 +1,44 @@
 {
-  "tagline": "Immersive themed restaurant UI with animations and interactive design",
+  "portfolio_order": 5,
   "featured": false,
+  "card_tags": [
+    "React",
+    "Framer Motion",
+    "UI Design"
+  ],
+  "tagline": "Themed restaurant web experience featuring animations, interactive menus, and immersive UI design.",
   "status": "completed",
   "details": {
-    "overview": "A Halloween-themed restaurant web app focused on storytelling, animations, and immersive UI using modern frontend tools.",
+    "overview": "GhoulEats is a Halloween-themed restaurant web application built with React and Framer Motion. The project focuses on creating an engaging user experience through interactive animations, themed storytelling, responsive layouts, and reusable component architecture.",
     "image": "https://github.com/dipanshu447/ghouleats/raw/main/.github/preview.gif",
+    "engineering_challenges": [
+      "Creating smooth animations without affecting performance",
+      "Building reusable UI components across multiple pages",
+      "Designing a consistent visual theme throughout the application",
+      "Implementing dynamic menu filtering with responsive interactions"
+    ],
     "key_features": [
-      "Framer Motion animations for smooth transitions",
-      "Interactive menu with category filtering",
-      "Multi-page navigation with themed UI",
-      "AI-generated characters and visuals",
-      "Consistent design across all sections"
+      "Framer Motion animations for page transitions and interactions",
+      "Interactive menu with category-based filtering",
+      "Multi-page navigation with themed user experience",
+      "Custom visuals and character-driven storytelling",
+      "Responsive design across desktop and mobile devices"
     ],
     "what_i_learned": [
-      "Using animations to enhance user experience",
-      "Building visually consistent themed interfaces",
-      "Managing larger component structures in React",
-      "Balancing creativity with usability",
-      "Working with Framer Motion for smooth interactions"
+      "Building immersive user experiences with modern frontend tools",
+      "Using Framer Motion to create smooth and engaging interactions",
+      "Designing reusable React component structures",
+      "Balancing creative design with usability and performance"
     ],
     "tech_stack": {
-      "frontend": ["React", "Tailwind CSS"],
-      "tools": ["Framer Motion", "Vite"]
+      "frontend": [
+        "React",
+        "Tailwind CSS"
+      ],
+      "tools": [
+        "Framer Motion",
+        "Vite"
+      ]
     }
   }
 }
